@@ -18,11 +18,11 @@
         <ul>
             <li><a href="">Configuracion</a></li>
             <li><a href="">Gestion de Donaciones</a></li>
-            <li><a href="">Gestion de Campañas</a></li>
+            <li><a href="Campañas">Gestion de Campañas</a></li>
             <li><a href="">Gestion de Noticias</a></li>
             <li><a href="">Gestion de Voluntarios</a></li>
-            <li><a href="">Gestion de Donantes</a></li>
-            <li><a href="">Gestion de Beneficiarios</a></li>
+            <li><a href="Donantes.php">Gestion de Donantes</a></li>
+            <li><a href="Beneficiarios.php">Gestion de Beneficiarios</a></li>
             <li><a href="">Gestion de Usuarios</a></li>
         </ul>
     </div>

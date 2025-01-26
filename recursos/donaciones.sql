@@ -100,6 +100,17 @@ CREATE TABLE ORGANIZA (
     FOREIGN KEY (id_proyecto) REFERENCES PROYECTO(id_proyecto)
 );
 
+CREATE TABLE NOTICIA (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(255) NOT NULL,
+    resumen TEXT NOT NULL,
+    contenido TEXT NOT NULL,
+    imagen VARCHAR(255),
+    fecha DATE NOT NULL,
+    estado ENUM('publicado', 'borrador', 'archivado') NOT NULL DEFAULT 'borrador',
+    id_proyecto INT NOT NULL,
+    FOREIGN KEY (id_proyecto) REFERENCES PROYECTO(id_proyecto)
+);
 
 -- Insertar 50 personas en la tabla PERSONA
 INSERT INTO PERSONA (nombre, ap_paterno, ap_materno, calle, nro, zona, telefono)
