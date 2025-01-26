@@ -112,6 +112,16 @@ CREATE TABLE NOTICIA (
     FOREIGN KEY (id_proyecto) REFERENCES PROYECTO(id_proyecto)
 );
 
+CREATE TABLE USUARIO (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_persona INT NOT NULL,
+    tipo ENUM('donante', 'admin', 'super'),
+    contra VARCHAR(20),
+    usuario VARCHAR(20),
+    correo VARCHAR(40),
+    estado ENUM('activo', 'inactivo'),
+    FOREIGN KEY (id_persona) REFERENCES PERSONA(id_persona)
+);
 -- Insertar 50 personas en la tabla PERSONA
 INSERT INTO PERSONA (nombre, ap_paterno, ap_materno, calle, nro, zona, telefono)
 VALUES

@@ -36,7 +36,10 @@
             flex-grow: 1;
             padding: 2rem;
         }
-
+        
+        .main-content a {
+            text-decoration: none;
+        }
         .grid-button {
             display: flex;
             justify-content: center;
@@ -81,7 +84,7 @@
         <h3 class="text-center">Fundación Castiel</h3>
         <ul class="list-unstyled">
             <li><a href="#">Configuración</a></li>
-            <li><a href="#">Gestión de Donaciones</a></li>
+            <li><a href="Donaciones.php">Gestión de Donaciones</a></li>
             <li><a href="#">Gestión de Campañas</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="#">Voluntarios</a></li>
