@@ -17,8 +17,8 @@
     <div>
         <ul>
             <li><a href="">Configuracion</a></li>
-            <li><a href="">Gestion de Donaciones</a></li>
-            <li><a href="Campañas">Gestion de Campañas</a></li>
+            <li><a href="Donaciones.php">Gestion de Donaciones</a></li>
+            <li><a href="Campañas.php">Gestion de Campañas</a></li>
             <li><a href="">Gestion de Noticias</a></li>
             <li><a href="">Gestion de Voluntarios</a></li>
             <li><a href="Donantes.php">Gestion de Donantes</a></li>
