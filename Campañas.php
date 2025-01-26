@@ -11,6 +11,7 @@
 <div class="container mt-5">
     <h1 class="text-center mb-4">Campañas</h1>
 
+    
 <?php
 // Configuración de la base de datos
 $servidor = "localhost";
