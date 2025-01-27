@@ -42,7 +42,7 @@ $sql = "SELECT p.id_persona,
 $resultado = $conn->query($sql);
 
 echo "<div class='text-right'>
-        <a href='fpdf/BeneficiariosPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
+        <a href='../../fpdf/BeneficiariosPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
       </div>";
 
 // Verificar si hay resultados
