@@ -10,7 +10,7 @@
     <header class="bg-light py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
-                <img src="fpdf/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                <img src="images/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
             </div>
             <nav class="nav">
                 <a class="nav-link" href="#">Inicio</a>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="news1.jpg" class="card-img-top" alt="Noticia 1">
+                        <img src="images/noticia1.png" class="card-img-top" alt="Noticia 1">
                         <div class="card-body">
                             <p class="card-text">Descripción de la noticia 1.</p>
                         </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="news2.jpg" class="card-img-top" alt="Noticia 2">
+                        <img src="images/noticia2.png" class="card-img-top" alt="Noticia 2">
                         <div class="card-body">
                             <p class="card-text">Descripción de la noticia 2.</p>
                         </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="news3.jpg" class="card-img-top" alt="Noticia 3">
+                        <img src="images/noticia3.png" class="card-img-top" alt="Noticia 3">
                         <div class="card-body">
                             <p class="card-text">Descripción de la noticia 3.</p>
                         </div>
