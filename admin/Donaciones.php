@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Donantes</h1>
+    <h1 class="text-center mb-4">Donaciones</h1>
 
 <?php
 // Configuración de la base de datos

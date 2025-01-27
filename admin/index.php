@@ -98,7 +98,7 @@
         <h1 class="text-center mb-4">Panel de Administración</h1>
         <div class="grid-container">
         <a href="#" class="grid-button btn-blue">GESTIÓN DE USUARIOS</a>
-            <a href="#" class="grid-button btn-blue">GESTIÓN DE DONACIONES</a>
+            <a href="Donaciones.php" class="grid-button btn-blue">GESTIÓN DE DONACIONES</a>
             <a href="#" class="grid-button btn-orange">GESTIÓN DE CAMPAÑAS</a>
             <a href="#" class="grid-button btn-gray">NOTICIAS</a>
             <a href="#" class="grid-button btn-red">VOLUNTARIOS</a>
