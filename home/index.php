@@ -13,7 +13,8 @@
                 <img src="images/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
             </div>
             <nav class="nav">
-                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="login.php">Iniciar Sesion</a>
+                <a class="nav-link" href="#">Registrar</a>
                 <a class="nav-link" href="#">Nosotros</a>
                 <a class="nav-link" href="#">Servicios</a>
                 <a class="nav-link" href="#">Contacto</a>

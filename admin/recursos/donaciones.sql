@@ -1,3 +1,8 @@
+
+
+
+
+
 CREATE TABLE PERSONA (
     id_persona INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50),
@@ -328,3 +333,7 @@ VALUES
 (15, 8, 6000.00),
 (17, 9, 7000.00),
 (19, 10, 8000.00);
+
+
+
+INSERT INTO USUARIO (id_persona, tipo, contra, usuario, correo, estado) VALUES (1, 'donante', 'password123', 'juanperez', 'juanperez@example.com', 'activo'), (2, 'donante', 'password456', 'analopez', 'analopez@example.com', 'activo'), (4, 'donante', 'password789', 'mariag', 'mg@example.com', 'activo'), (8, 'admin', 'password012', 'dianita', 'DiAna@example.com', 'activo');
