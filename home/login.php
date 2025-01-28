@@ -117,8 +117,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         // Verificar si la contraseña es correcta usando password_verify
-        if ($pass=== $row['contra']) {
-            echo "Inicio de sesión exitoso.";
+        if ($pass === $row['contra']) {
+            // Redirigir a monitoreo.php si el inicio de sesión es exitoso
+            header("Location: monitoreo.php");
+            exit();
         } else {
             echo "Usuario o contraseña incorrectos.";
         }
@@ -131,3 +133,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 $conn->close();
 ?>
+

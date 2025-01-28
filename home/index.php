@@ -16,8 +16,8 @@
                 <a class="nav-link" href="login.php">Iniciar Sesion</a>
                 <a class="nav-link" href="registro.php">Registrar</a>
                 <a class="nav-link" href="nosotros.php">Nosotros</a>
-                <a class="nav-link" href="#">Servicios</a>
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="servicios.php">Servicios</a>
+                <a class="nav-link" href="contactos.php">Contacto</a>
             </nav>
             <div class="search-login d-flex">
                 <input type="text" class="form-control mr-2" placeholder="Buscar">
