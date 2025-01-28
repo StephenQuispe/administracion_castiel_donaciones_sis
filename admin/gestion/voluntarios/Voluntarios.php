@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
+    <title>Voluntario</title>
     <!-- Enlace a Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Usuarios</h1>
+    <h1 class="text-center mb-4">Voluntario</h1>
 
 <?php
 // Configuración de la base de datos
@@ -27,11 +27,11 @@ if ($conn->connect_error) {
 }
 
 // Consulta para obtener datos de la tabla
-$sql = "SELECT * FROM noticia n JOIN proyecto p on p.id_proyecto = n.id_proyecto;";
+$sql = "SELECT * FROM voluntario v JOIN persona p on v.id_voluntario = p.id_persona;";
 $resultado = $conn->query($sql);
 //to do
 echo "<div class='text-right'>
-        <a href='#' target='_blank'class='btn btn-success'>Agregar Noticia</a>
+        <a href='#' target='_blank'class='btn btn-success'>Agregar Voluntario</a>
       </div>";
 // Verificar si hay resultados
 if ($resultado->num_rows > 0) {
@@ -39,13 +39,11 @@ if ($resultado->num_rows > 0) {
     echo "<thead class='table-dark'>  
             <tr>
                 <th>ID</th>
-                <th>Titulo</th>
-                <th>Resumen</th>
-                <th>Contenido</th>
-                <th>Ruta Imagen</th>
-                <th>Fecha</th>
-                <th>Estado</th>
-                <th>Proyecto Relacionado</th>                
+                <th>Nombre</th>
+                <th>Calle</th>
+                <th>Nro</th>
+                <th>Zona</th>
+                <th>Telefono</th>                
                 <th>Acciones</th>                
                 
             </tr>
@@ -53,14 +51,12 @@ if ($resultado->num_rows > 0) {
     // Mostrar cada fila de la tabla
     while ($fila = $resultado->fetch_assoc()) {
         echo "<tr>
-                <td>" . $fila["n.id"] . "</td>                
-                <td>" . $fila["n.titulo"] . "</td>
-                <td>" . $fila["n.resumen"] . "</td>
-                <td>" . $fila["n.contenido"] . "</td>
-                <td>" . $fila["n.imagen"] . "</td>
-                <td>" . $fila["n.fecha"] . "</td>
-                <td>" . $fila["n.estado"] . "</td>
-                <td>" . $fila["p.nombre_proyecto"] . "</td>
+                <td>" . $fila["u.id"] . "</td>                
+                <td>" . $fila["p.nombre"] . " " . $fila["p.ap_paterno"] . " " . $fila["p.ap_materno"] ."</td>
+                <td>" . $fila["calle"] . "</td>
+                <td>" . $fila["nro"] . "</td>
+                <td>" . $fila["zona"] . "</td>
+                <td>" . $fila["telefono"] . "</td>                
                 <td>
                     <a class='btn btn-warning'>Editar</a>
                     <a class='btn btn-danger'>Eliminar</a>                 

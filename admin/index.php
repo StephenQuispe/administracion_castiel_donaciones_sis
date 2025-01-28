@@ -90,14 +90,14 @@
             <li><a href="#">Voluntarios</a></li>
             <li><a href="./gestion/donantes/Donantes.php">Gestión de Donantes</a></li>
             <li><a href="./gestion/beneficiarios/Beneficiarios.php">Gestión de Beneficiarios</a></li>
-            <li><a href="#">Gestión de Usuarios</a></li>
+            <li><a href="./gestion/usuarios/Usuarios.php">Gestión de Usuarios</a></li>
         </ul>
     </div>
 
     <div class="main-content">
         <h1 class="text-center mb-4">Panel de Administración</h1>
         <div class="grid-container">
-        <a href="#" class="grid-button btn-blue">GESTIÓN DE USUARIOS</a>
+            <a href="./gestion/usuarios/Usuarios.php" class="grid-button btn-blue">GESTIÓN DE USUARIOS</a>
             <a href="./gestion/donaciones/Donaciones.php" class="grid-button btn-blue">GESTIÓN DE DONACIONES</a>
             <a href="./gestion/campanias/Campañas.php" class="grid-button btn-orange">GESTIÓN DE CAMPAÑAS</a>
             <a href="./gestion/noticias/Noticias.php" class="grid-button btn-gray">NOTICIAS</a>
