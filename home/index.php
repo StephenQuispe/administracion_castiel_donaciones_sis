@@ -15,7 +15,7 @@
             <nav class="nav">
                 <a class="nav-link" href="login.php">Iniciar Sesion</a>
                 <a class="nav-link" href="registro.php">Registrar</a>
-                <a class="nav-link" href="#">Nosotros</a>
+                <a class="nav-link" href="nosotros.php">Nosotros</a>
                 <a class="nav-link" href="#">Servicios</a>
                 <a class="nav-link" href="#">Contacto</a>
             </nav>
