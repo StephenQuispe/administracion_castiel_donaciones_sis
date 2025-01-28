@@ -31,7 +31,9 @@ if ($conn->connect_error) {
 $sql = "SELECT *
         FROM proyecto";
 $resultado = $conn->query($sql);
-
+echo "<div class='text-right'>
+        <a href='#' target='_blank'class='btn btn-success'>Agregar Campaña</a>
+      </div><br>";
 echo "<div class='text-right'>
         <a href='fpdf/CampañasPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
       </div>";
@@ -48,6 +50,7 @@ if ($resultado->num_rows > 0) {
                 <th>Inicio</th>
                 <th>Final</th>
                 <th>Max. Participantes</th>                
+                <th>Acciones</th>                
             </tr>
           </thead>";
     // Mostrar cada fila de la tabla
@@ -60,6 +63,10 @@ if ($resultado->num_rows > 0) {
                 <td>" . $fila["fecha_inicio"] . "</td>
                 <td>" . $fila["fecha_fin"] . "</td>
                 <td>" . $fila["nro_participantes"] . "</td>                
+                <td>
+                    <a class='btn btn-warning'>Editar</a>
+                    <a class='btn btn-danger'>Eliminar</a>                 
+                </td>
               </tr>";
     }
     echo "</table>";

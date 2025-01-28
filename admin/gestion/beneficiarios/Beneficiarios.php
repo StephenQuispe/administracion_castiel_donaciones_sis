@@ -40,7 +40,9 @@ $sql = "SELECT p.id_persona,
         FROM persona p
         JOIN beneficiario b ON p.id_persona = b.id_beneficiario";
 $resultado = $conn->query($sql);
-
+echo "<div class='text-right'>
+        <a href='#' target='_blank'class='btn btn-success'>Agregar Beneficiario</a>
+      </div><br>";
 echo "<div class='text-right'>
         <a href='../../fpdf/BeneficiariosPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
       </div>";
@@ -60,6 +62,8 @@ if ($resultado->num_rows > 0) {
                 <th>Telefono</th>
                 <th>Prioridad</th>
                 <th>Requerimientos</th>
+                <th>Acciones</th>
+                
             </tr>
           </thead>";
     // Mostrar cada fila de la tabla
@@ -73,6 +77,10 @@ if ($resultado->num_rows > 0) {
                 <td>" . $fila["telefono"] . "</td>
                 <td>" . $fila["prioridad"] . "</td>
                 <td>" . $fila["requerimientos"] . "</td>                
+                <td>
+                    <a class='btn btn-warning'>Editar</a>
+                    <a class='btn btn-danger'>Eliminar</a>                 
+                </td>
               </tr>";
     }
     echo "</table>";

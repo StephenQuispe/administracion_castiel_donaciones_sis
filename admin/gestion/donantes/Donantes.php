@@ -42,9 +42,14 @@ $sql = "SELECT p.id_persona,
         FROM persona p
         JOIN donante d ON p.id_persona = d.id_persona";
 $resultado = $conn->query($sql);
-
+echo "<div class='text-right'>
+        <a href='#' target='_blank'class='btn btn-success'>Agregar Donantes</a>
+      </div>";
 echo "<div class='text-right'>
         <a href='../../fpdf/DonantesPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
+      </div>";
+echo "<div class='text-right'>
+        <a href='TotalDonado.php' target='_blank'class='btn btn-success'>Total Donado por Donante</a>
       </div>";
 
 // Verificar si hay resultados
@@ -62,6 +67,7 @@ if ($resultado->num_rows > 0) {
                 <th>Fecha Registro</th>
                 <th>Frecuencia</th>
                 <th>Organizacion</th>
+                <th>Acciones</th>
             </tr>
           </thead>";
     // Mostrar cada fila de la tabla
@@ -77,6 +83,10 @@ if ($resultado->num_rows > 0) {
                 <td>" . $fila["fecha_registro"] . "</td>
                 <td>" . $fila["frecuencia"] . "</td>
                 <td>" . $fila["nombre_organizacion"] . "</td>
+                <td>
+                    <a class='btn btn-warning'>Editar</a>
+                    <a class='btn btn-danger'>Eliminar</a>                 
+                </td>
               </tr>";
     }
     echo "</table>";
