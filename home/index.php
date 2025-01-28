@@ -21,7 +21,7 @@
             </nav>
             <div class="search-login d-flex">
                 <input type="text" class="form-control mr-2" placeholder="Buscar">
-                <button class="btn btn-primary">Login</button>
+                
             </div>
         </div>
     </header>
@@ -34,7 +34,7 @@
                     <div class="card">
                         <img src="images/noticia1.png" class="card-img-top" alt="Noticia 1">
                         <div class="card-body">
-                            <p class="card-text">Descripción de la noticia 1.</p>
+                            <p class="card-text">Castiel otorga 5.000 euros anuales a huérfanos de violencia de género y ofrece apoyo psicológico y jurídico.</p>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="card">
                         <img src="images/noticia2.png" class="card-img-top" alt="Noticia 2">
                         <div class="card-body">
-                            <p class="card-text">Descripción de la noticia 2.</p>
+                            <p class="card-text">Trabajo para ayudar a menores huérfanos y en riesgo social, buscando donaciones y apoyo.</p>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                     <div class="card">
                         <img src="images/noticia3.png" class="card-img-top" alt="Noticia 3">
                         <div class="card-body">
-                            <p class="card-text">Descripción de la noticia 3.</p>
+                            <p class="card-text">La Fundación Castiel apoya a familias de niños huérfanos por feminicidio, ofreciendo ayuda económica y préstamos sin intereses.</p>
                         </div>
                     </div>
                 </div>
@@ -61,18 +61,18 @@
                 <div class="col-md-6">
                     <h2>ENTREGA 1</h2>
                     <div class="card">
-                        <img src="entrega1.jpg" class="card-img-top" alt="Entrega 1">
+                        <img src="images/entrega1.png" class="card-img-top" alt="Entrega 1">
                         <div class="card-body">
-                            <p class="card-text">Descripción de la entrega 1.</p>
+                            <p class="card-text">La Fundación Castiel ha llevado a cabo una campaña solidaria donde han recolectado y entregado frazadas, material de bioseguridad, pañales para adultos y víveres a hogares de ancianos en varias ciudades.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <h2>ENTREGA 2</h2>
                     <div class="card">
-                        <img src="entrega2.jpg" class="card-img-top" alt="Entrega 2">
+                        <img src="images/entrega2.png" class="card-img-top" alt="Entrega 2">
                         <div class="card-body">
-                            <p class="card-text">Descripción de la entrega 2.</p>
+                            <p class="card-text">La Fundación Castiel ha coordinado la recolección y entrega de alimentos enlatados, ropa y otros víveres a personas de escasos recursos, asegurando que reciban el apoyo necesario durante tiempos difíciles.</p>
                         </div>
                     </div>
                 </div>
@@ -83,21 +83,13 @@
                 <div class="col-md-6">
                     <h2>Identifica Personas con Necesidades</h2>
                     <div class="card">
-                        <img src="identifica.jpg" class="card-img-top" alt="Identifica">
+                        <img src="images/ubicacion1.jpeg" class="card-img-top" alt="Identifica">
                         <div class="card-body">
-                            <p class="card-text">Descripción de la identificación.</p>
+                            <p class="card-text">La Fundación Castiel se dedica a identificar a personas con necesidades a través de campañas comunitarias y colaboración con organizaciones locales. Utilizan encuestas y estudios para detectar a aquellos que requieren apoyo urgente, asegurando que los recursos lleguen a quienes más los necesitan.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <h2>Localiza Personas con Necesidades</h2>
-                    <div class="card">
-                        <img src="localiza.jpg" class="card-img-top" alt="Localiza">
-                        <div class="card-body">
-                            <p class="card-text">Descripción de la localización.</p>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
     </main>
