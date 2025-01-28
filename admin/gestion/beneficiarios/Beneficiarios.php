@@ -44,7 +44,9 @@ $resultado = $conn->query($sql);
 echo "<div class='text-right'>
         <a href='../../fpdf/BeneficiariosPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
       </div>";
-
+echo "<div class='text-right'>
+        <a href='PrioridadAlta.php' target='_blank'class='btn btn-success'>Ver Beneficiarios de prioridad Alta</a>
+      </div>";
 // Verificar si hay resultados
 if ($resultado->num_rows > 0) {
     echo "<table class='table table-striped table-bordered'>";
