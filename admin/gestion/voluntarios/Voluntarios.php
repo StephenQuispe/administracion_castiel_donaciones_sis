@@ -51,8 +51,8 @@ if ($resultado->num_rows > 0) {
     // Mostrar cada fila de la tabla
     while ($fila = $resultado->fetch_assoc()) {
         echo "<tr>
-                <td>" . $fila["u.id"] . "</td>                
-                <td>" . $fila["p.nombre"] . " " . $fila["p.ap_paterno"] . " " . $fila["p.ap_materno"] ."</td>
+                <td>" . $fila["id_persona"] . "</td>                
+                <td>" . $fila["nombre"] . " " . $fila["ap_paterno"] . " " . $fila["ap_materno"] ."</td>
                 <td>" . $fila["calle"] . "</td>
                 <td>" . $fila["nro"] . "</td>
                 <td>" . $fila["zona"] . "</td>
