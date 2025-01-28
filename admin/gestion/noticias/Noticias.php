@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h1 class="text-center mb-4">Donaciones</h1>
+    <h1 class="text-center mb-4">Donantes</h1>
 
 <?php
 // Configuración de la base de datos
@@ -27,52 +27,43 @@ if ($conn->connect_error) {
 }
 
 // Consulta para obtener datos de la tabla
-$sql = "SELECT d.id_donacion AS id,
-               d.fecha_donacion AS fecha,
-               d.valor_economico AS valor,
-               d.p_acopio AS acopio,
-               pe.nombre AS nom,
-               pe.ap_paterno AS pat,
-               pe.ap_materno AS mat,
-               pr.nombre_proyecto AS proyecto
-        FROM donacion d
-        JOIN donante do on do.id_donante = d.id_donante
-        JOIN persona pe on pe.id_persona = do.id_persona
-        JOIN proyecto pr on pr.id_proyecto = d.id_proyecto";
+$sql = "SELECT * FROM noticia n JOIN proyecto p on p.id_proyecto = n.id_proyecto;";
 $resultado = $conn->query($sql);
+//to do
 echo "<div class='text-right'>
-        <a href='#' target='_blank'class='btn btn-success'>Agregar Donacion</a>
-      </div><br>";
-echo "<div class='text-right'>
-        <a href='fpdf/DonantesPDF_H.php' target='_blank'class='btn btn-success'>Generar Reporte</a>
+        <a href='#' target='_blank'class='btn btn-success'>Agregar Noticia</a>
       </div>";
-
 // Verificar si hay resultados
 if ($resultado->num_rows > 0) {
     echo "<table class='table table-striped table-bordered'>";
     echo "<thead class='table-dark'>  
             <tr>
                 <th>ID</th>
-                <th>Nombre</th>
-                <th>Proyecto</th>
+                <th>Titulo</th>
+                <th>Resumen</th>
+                <th>Contenido</th>
+                <th>Ruta Imagen</th>
                 <th>Fecha</th>
-                <th>Valor Economico</th>
-                <th>P. Acopio</th>   
-                <th>Acciones</th>         
+                <th>Estado</th>
+                <th>Proyecto Relacionado</th>                
+                <th>Acciones</th>                
+                
             </tr>
           </thead>";
     // Mostrar cada fila de la tabla
     while ($fila = $resultado->fetch_assoc()) {
         echo "<tr>
-                <td>" . $fila["id"] . "</td>
-                <td>" . $fila["nom"] . " " . $fila["pat"] . " " . $fila["mat"] ."</td>
-                <td>" . $fila["proyecto"] . "</td>
-                <td>" . $fila["fecha"] . "</td>
-                <td>" . $fila["valor"] . "</td>
-                <td>" . $fila["acopio"] . "</td>
+                <td>" . $fila["n.id"] . "</td>                
+                <td>" . $fila["n.titulo"] . "</td>
+                <td>" . $fila["n.resumen"] . "</td>
+                <td>" . $fila["n.contenido"] . "</td>
+                <td>" . $fila["n.imagen"] . "</td>
+                <td>" . $fila["n.fecha"] . "</td>
+                <td>" . $fila["n.estado"] . "</td>
+                <td>" . $fila["p.nombre_proyecto"] . "</td>
                 <td>
-                    <a href='' class='btn btn-warning'>Editar</a>
-                    <a href='' class='btn btn-danger'>Eliminar</a>                    
+                    <a class='btn btn-warning'>Editar</a>
+                    <a class='btn btn-danger'>Eliminar</a>                 
                 </td>
               </tr>";
     }

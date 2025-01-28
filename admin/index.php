@@ -85,8 +85,8 @@
         <ul class="list-unstyled">
             <li><a href="#">Configuración</a></li>
             <li><a href="./gestion/donaciones/Donaciones.php">Gestión de Donaciones</a></li>
-            <li><a href="#">Gestión de Campañas</a></li>
-            <li><a href="#">Noticias</a></li>
+            <li><a href="./gestion/campanias/Campañas.php">Gestión de Campañas</a></li>
+            <li><a href="./gestion/noticias/Noticias.php">Noticias</a></li>
             <li><a href="#">Voluntarios</a></li>
             <li><a href="./gestion/donantes/Donantes.php">Gestión de Donantes</a></li>
             <li><a href="./gestion/beneficiarios/Beneficiarios.php">Gestión de Beneficiarios</a></li>
@@ -99,8 +99,8 @@
         <div class="grid-container">
         <a href="#" class="grid-button btn-blue">GESTIÓN DE USUARIOS</a>
             <a href="./gestion/donaciones/Donaciones.php" class="grid-button btn-blue">GESTIÓN DE DONACIONES</a>
-            <a href="#" class="grid-button btn-orange">GESTIÓN DE CAMPAÑAS</a>
-            <a href="#" class="grid-button btn-gray">NOTICIAS</a>
+            <a href="./gestion/campanias/Campañas.php" class="grid-button btn-orange">GESTIÓN DE CAMPAÑAS</a>
+            <a href="./gestion/noticias/Noticias.php" class="grid-button btn-gray">NOTICIAS</a>
             <a href="#" class="grid-button btn-red">VOLUNTARIOS</a>
             <a href="./gestion/donantes/Donantes.php" class="grid-button btn-green">GESTIÓN DE DONANTES</a>
             <a href="./gestion/beneficiarios/Beneficiarios.php" class="grid-button btn-gray">GESTIÓN DE BENEFICIARIOS</a>
