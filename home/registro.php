@@ -81,7 +81,7 @@
 </html>
 
 <?php
-// registro.php
+// registro.phpgi
 $servername = "localhost";
 $username = "root";
 $password = "";
